@@ -23,15 +23,20 @@ public class MartianWeight {
 
 	public static void main(String[] args) {
 
-		System.out.print("Enter a series of Earth weights (space-seperated):");
+		System.out.print("Enter a series of Earth weights (space-separated):");
 		Scanner scanner = new Scanner(System.in);
 		//get inputs from the user
 		String weightStr = scanner.nextLine();
 		//create an array and add the inputs
 		String[] weightArray = weightStr.split(" ");
-		for(int i = 0; i < weightArray.length; i++){
-		int martianWeight = Integer.parseInt(weightStr);
-		int mWeight = (int)(martianWeight * 0.378);
+		//10,20,30....[10, 20, 30]
+		//weightArray.length == 3;
+
+		for(int i = 0; i < weightArray.length; i++) {
+		int martianWeight = Integer.parseInt(weightArray[i]); // 10, 20 , 30
+		//casting (widening or narrowing)
+		int mWeight = (int) (martianWeight * 0.378); // 10 * 0.378 --integer
+			System.out.println(martianWeight + " lbs on Earth, is " + mWeight + " lbs on Mars." );
 
 		}
 
