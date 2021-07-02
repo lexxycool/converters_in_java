@@ -20,6 +20,7 @@ public class MartianWeight {
 
 	public static void main(String[] args) {
 
+
 	}
 
 }
