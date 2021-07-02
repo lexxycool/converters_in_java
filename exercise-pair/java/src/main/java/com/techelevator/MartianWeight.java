@@ -29,6 +29,11 @@ public class MartianWeight {
 		String weightStr = scanner.nextLine();
 		//create an array and add the inputs
 		String[] weightArray = weightStr.split(" ");
+		for(int i = 0; i < weightArray.length; i++){
+		int martianWeight = Integer.parseInt(weightStr);
+		int mWeight = (int)(martianWeight * 0.378);
+
+		}
 
 
 	}
