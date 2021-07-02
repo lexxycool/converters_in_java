@@ -1,5 +1,6 @@
 package com.techelevator;
 import java.util.Scanner;
+import java.util.Arrays;
 
 
 /*
@@ -24,8 +25,10 @@ public class MartianWeight {
 
 		System.out.print("Enter a series of Earth weights (space-seperated):");
 		Scanner scanner = new Scanner(System.in);
+		//get inputs from the user
 		String weightStr = scanner.nextLine();
-
+		//create an array and add the inputs
+		String[] weightArray = weightStr.split(" ");
 
 
 	}
